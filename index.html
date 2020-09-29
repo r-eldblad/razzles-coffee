@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Razzle's Café</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Lobster"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Open+Sans"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="grid-container">
+      <header id="header">
+        <h1 class="logo" aria-label="Razzles Café">Razzle's Café</h1>
+        <nav class="navigation">
+          <ul class="menu-bar">
+            <li><a href="#" tabindex="1">Hem</a></li>
+            <li><a href="#om-oss" tabindex="2">Om oss</a></li>
+            <li><a href="#meny" tabindex="3">Meny</a></li>
+            <li><a href="#hitta-hit" tabindex="4">Hitta hit</a></li>
+            <li><a href="#kontakta-oss" tabindex="5">Kontakta oss</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main id="om-oss" aria-label="Beskrivning av Razzles Cafe">
+        <h2 class="info" tabindex="6">Om oss</h2>
+        <article>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A velit
+            labore quod praesentium temporibus. Voluptatibus ipsa quo ipsum
+            cupiditate modi accusamus dignissimos, amet deleniti aut labore non,
+            tenetur reiciendis nesciunt laborum cumque suscipit iste odit beatae
+            perferendis accusantium dolore? Quibusdam dolor autem laborum quos
+            repudiandae quae vitae eaque nihil impedit.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore
+            aperiam impedit ut. Voluptas, id deleniti. Dolorem libero eveniet
+            tempora aliquam id, rerum repudiandae accusamus! Fuga quas
+            voluptatibus eligendi veniam. Beatae vitae exercitationem repellat
+            asperiores dicta assumenda fugiat, minima eum, error inventore,
+            iusto veniam ut temporibus saepe? Inventore accusamus aperiam
+            tempora atque. Sit debitis neque corporis saepe non enim possimus
+            consectetur.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus iste,
+            veritatis tempora minima fuga reprehenderit dolores, perspiciatis
+            quisquam, aspernatur eius iure atque eos nihil rem laboriosam ipsa
+            dolorum ipsum porro.
+          </p>
+
+          <iframe
+            class="youtube-video"
+            width="500"
+            height="400"
+            src="https://www.youtube.com/embed/ohyJOm6Lk3k"
+            allowfullscreen
+            tabindex="7"
+          ></iframe>
+        </article>
+      </main>
+
+      <section id="hitta-hit" aria-label="Karta till caféet">
+        <h2 id="hitta" tabindex="18">Hitta hit</h2>
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2037.2679879433124!2d18.008867116335885!3d59.29508138164683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f77af6e4cd0a7%3A0xc5dcdacc50227efc!2sChas%20Academy%20AB!5e0!3m2!1ssv!2sse!4v1600372373120!5m2!1ssv!2sse"
+          width="300"
+          height="300"
+          aria-hidden="false"
+          tabindex="19"
+        ></iframe>
+      </section>
+
+      <section id="kontakta-oss" aria-label="Kontaktuppgifter">
+        <h2 id="kontakta" tabindex="13">Kontakta oss</h2>
+        <div class="info">
+          <h3 tabindex="14">Ring kundservice</h3>
+          <a
+            href="callto:0771123456"
+            class="nummer"
+            aria-label="Telefonnummer, klicka för att ringa"
+            tabindex="15"
+            >0771-12 34 56</a
+          >
+          <h3 tabindex="16">Mejla oss</h3>
+          <a
+            href="mailto:info@razzlescoffee.se"
+            class="epost"
+            aria-label="Epostadress, klicka för att skicka mejl"
+            tabindex="17"
+            >info@razzlescoffee.se</a
+          >
+        </div>
+      </section>
+      <section id="meny" aria-label="Meny">
+        <h2 tabindex="8">Meny</h2>
+        <h3>Kaffe</h3>
+        <ul class="kaffe-sorter">
+          <li>Bryggkaffe - 25kr</li>
+          <li>Kaffe latte - 38kr</li>
+          <li>Kaffe Mocha - 35kr</li>
+          <li>Espresso - 30kr</li>
+        </ul>
+
+        <h3 tabindex="9">Catering</h3>
+        <ul class="catering">
+          <li>Ost och skinksmörgås - 45kr</li>
+          <li>Räksmörgås - 65kr</li>
+          <li>Kycklingsallad - 80kr</li>
+          <li>Ceasarsallad - 85kr</li>
+        </ul>
+
+        <h3 tabindex="10">Dryck</h3>
+        <ul class="drycker">
+          <li>Vatten - 15kr</li>
+          <li>Läsk - 25kr</li>
+          <li>Iste - 28kr</li>
+          <li>Apelsinjuice - 20kr</li>
+        </ul>
+        <p class="utskrift">Nedanför kan du skriva ut menyn</p>
+        <div class="pdf-container" aria-label="Skriv ut menyn" tabindex="11">
+          <embed
+            class="pdf-fil"
+            src="pdf/meny.pdf"
+            width="500"
+            height="375"
+            type="application/pdf"
+            tabindex="12"
+          />
+        </div>
+      </section>
+      <footer class="footer">
+        <nav class="navigation">
+          <ul class="menu-bar">
+            <li><a href="#" tabindex="20">Hem</a></li>
+            <li><a href="#om-oss" tabindex="21">Om oss</a></li>
+            <li><a href="#meny" tabindex="22">Meny</a></li>
+            <li><a href="#hitta-hit" tabindex="23">Hitta hit</a></li>
+            <li><a href="#kontakta-oss" tabindex="24">Kontakta oss</a></li>
+          </ul>
+        </nav>
+        <h2 class="footer-logo">Razzle's Café</h2>
+        <p class="copy">Copyright &copy; 2020</p>
+      </footer>
+    </div>
+  </body>
+</html>

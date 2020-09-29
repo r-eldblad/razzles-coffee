@@ -1,0 +1,365 @@
+/* ---------- CSS Variables -------------*/
+/* ------------ Resets --------------*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Open Sans;
+  width: 100%;
+  height: 100%;
+}
+
+h2,
+h3 {
+  text-align: center;
+  padding: 1em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+p {
+  text-align: center;
+}
+
+/* ------------ Layout --------------*/
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.2fr 1.5fr;
+      grid-template-columns: 1fr 1.2fr 1.5fr;
+  -ms-grid-rows: auto 1.3fr 1.3fr auto 0.5fr auto;
+      grid-template-rows: auto 1.3fr 1.3fr auto 0.5fr auto;
+      grid-template-areas: "header header header" "om-oss om-oss om-oss" "meny meny meny" "hitta-hit hitta-hit hitta-hit" "kontakta-oss kontakta-oss kontakta-oss" "footer footer footer";
+}
+
+#header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: header;
+}
+
+#om-oss {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: om-oss;
+}
+
+#hitta-hit {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: hitta-hit;
+}
+
+#kontakta-oss {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: kontakta-oss;
+}
+
+#meny {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: meny;
+}
+
+.footer {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: footer;
+}
+
+/* ------------------- Header & Footer Styles ------------------*/
+#header,
+.footer {
+  background-color: #946b36;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Lobster, sans-serif;
+  padding: 20px;
+  color: white;
+  font-size: 3em;
+}
+
+.footer-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 1em;
+  font-family: Lobster, sans-serif;
+  color: white;
+  font-size: 2.5em;
+}
+
+.copy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  padding: 1em;
+  background-color: #ca9b5e;
+  width: 100%;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ca9b5e;
+}
+
+.navigation .menu-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.navigation li {
+  text-align: center;
+  list-style-type: none;
+}
+
+.navigation a {
+  display: block;
+  padding: 1em;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navigation li:hover {
+  -webkit-transition: background-color 2s ease;
+  transition: background-color 2s ease;
+  background-color: #946b36;
+}
+
+.navigation li:active,
+.navigation a:active {
+  background-color: #946b36;
+}
+
+/* -------------------- Om Oss Styles -------------------- */
+#om-oss {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 246, 252, 0.4)), to(rgba(32, 26, 13, 0.3))), url("img/snapbythree-my-g6e641CiHFQ-unsplash.jpg");
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.4), rgba(32, 26, 13, 0.3)), url("img/snapbythree-my-g6e641CiHFQ-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 4em;
+}
+
+#om-oss h2 {
+  color: white;
+  text-transform: uppercase;
+}
+
+#om-oss p {
+  margin: 1em;
+  color: white;
+  text-shadow: 1px 1px #9c9c9c;
+  line-height: 1.5;
+}
+
+#om-oss .youtube-video {
+  width: 100%;
+}
+
+/*--------------------- Meny Styles --------------------- */
+#meny {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("img/ali-yahya-LuH_2QlfJ5s-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-transform: uppercase;
+}
+
+.kaffe-sorter,
+.catering,
+.drycker {
+  text-align: center;
+  padding: 1em;
+  font-size: 1em;
+}
+
+.pdf-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pdf-container > .pdf-fil {
+  width: 100%;
+  margin: 2em;
+}
+
+.utskrift {
+  margin-top: 1.5em;
+  text-align: center;
+  text-decoration: underline;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+/* -------------------- Hitta hit Styles -------------------- */
+#hitta-hit {
+  background: url(img/dagmara-rusmane-a9MVUis657g-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#hitta {
+  color: white;
+  text-transform: uppercase;
+  margin: 2em;
+}
+
+.map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.youtube-video {
+  margin-top: 1.5em;
+}
+
+/*--------------------- Kontakta oss Styles --------------------- */
+#kontakta-oss {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  background-color: #ca9b5e;
+}
+
+.nummer,
+.epost {
+  text-align: center;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.nummer:hover,
+.epost:hover {
+  text-decoration: underline;
+}
+
+#kontakta {
+  text-transform: uppercase;
+}
+
+/*--------------------- Media Query(s) --------------------- */
+@media all and (min-width: 1000px) {
+  .navigation > .menu-bar {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer > .navigation > .menu-bar {
+    display: none;
+  }
+  .grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1.2fr 1.5fr;
+        grid-template-columns: 1fr 1.2fr 1.5fr;
+    -ms-grid-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "header header header" "om-oss om-oss meny" "kontakta-oss hitta-hit meny" "footer footer footer";
+  }
+  #om-oss > h2 {
+    text-align: left;
+  }
+  .navigation > .menu-bar > li {
+    width: 100%;
+  }
+  .kaffe-sorter,
+  .catering,
+  .drycker,
+  .pdf-fil {
+    font-size: 1.4em;
+  }
+  #om-oss > article > p {
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=style.css.map */
